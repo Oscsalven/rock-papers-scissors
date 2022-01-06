@@ -57,14 +57,14 @@ function game() {
         /* The computer chooses a weapon */
          let computerSelection = computerPlay();
 
-         /* This two were used for testing the game */
-        /*  console.log(playerSelection);
-         console.log(computerSelection); */
-        
         /* This starts a round */
+        console.log("Player's choice: " + playerSelection);
+        console.log("Computer's choice: " + computerSelection);
         console.log(playRound(playerSelection, computerSelection));
         round ++;
     }
+
+    alert("Thanks for playing!")
 }
 
 game();
